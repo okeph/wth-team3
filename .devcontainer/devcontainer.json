@@ -1,0 +1,13 @@
+{
+    "name": "C# (.NET)",
+    "image": "mcr.microsoft.com/devcontainers/dotnet:0-6.0",
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {
+            "installBicep": true,
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/azure-cli:latest": {}
+    },
+    "extensions": ["github.codespaces", "github.copilot","GitHub.copilot-chat"],
+    "postCreateCommand": "cd Application && dotnet restore"
+}
