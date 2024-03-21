@@ -21,3 +21,5 @@ jobs:
         uses: Azure/arm-deploy@v1
         with:
           resourceGroupName: '${{vars.TEAM3_RESOURCE_GROUP_NAME}}'
+          template: '/workspaces/wth-team3/InfrastructureAsCode/main.bicep'
+          
