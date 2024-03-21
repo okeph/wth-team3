@@ -2,11 +2,7 @@ name: First Workflow
 
 on:
  workflow_dispatch:
-  inputs:
-    name:
-      description: 'Name of the person to greet'
-      required: true
-      default: 'Mona'
+
 
 jobs:
   job1:
