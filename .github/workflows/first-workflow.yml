@@ -2,14 +2,20 @@ name: First Workflow
 
 on:
     workflow_dispatch:
+    -push:
+        branches:
+            - main
+            
 
 jobs:
     job1:
         runs-on: ubuntu-latest
+        env:
+          MY_Variable: "This is my variable"
 
         steps:
             - name: Step 1
-              run: echo "step1"
+              run: echo "step1, ${{ env.MY_Variable }}"
       
             - name: Step 2
               run: echo "step2"
