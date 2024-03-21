@@ -1,17 +1,22 @@
 name: First Workflow
 
-on:
- workflow_dispatch:
-
 
 jobs:
-  job1:
-    runs-on: ubuntu-latest
+    job1:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Step 1
-        run: echo "step1"
+        steps:
+            - name: Step 1
+                run: echo "step1"
 
-      - name: Step 2
-        run: echo "step2"
+            - name: Step 2
+                run: echo "step2"
 
+    job2:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Cowsay Step
+                uses: jessfraz/cowsay-action@master
+                with:
+                    text: "Hello from GitHub Actions"
