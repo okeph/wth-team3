@@ -1,9 +1,12 @@
 name: First Workflow
 
 on:
-  push:
-    branches:
-      - main
+ workflow_dispatch:
+  inputs:
+    name:
+      description: 'Name of the person to greet'
+      required: true
+      default: 'Mona'
 
 jobs:
   job1:
