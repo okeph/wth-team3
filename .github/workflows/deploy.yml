@@ -20,4 +20,4 @@ jobs:
       - name: Deploy ARM Template
         uses: Azure/arm-deploy@v1
         with:
-          resourceGroupName: '${{evn.TEAM3_RESOURCE_GROUP_NAME}}'
+          resourceGroupName: '${{variables.TEAM3_RESOURCE_GROUP_NAME}}'
