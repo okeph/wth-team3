@@ -20,4 +20,10 @@ jobs:
       - name: Deploy ARM Template
         uses: Azure/arm-deploy@v1
         with:
-          creds: '${{secrets.TEAM3_SERVICE_PRINCIPAL}}'
+          subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
+          tenantId: ${{ env.AZURE_TENANT_ID }}
+          clientId: ${{ env.AZURE_CLIENT_ID }}
+          clientSecret: ${{ env.AZURE_CLIENT_SECRET }}
+          resourceGroupName: ${{ env.TEAM3_RESOURCE_GROUP_NAME }}
+          templateLocation: 'linked'
+          csmFile: 'path/to/bicep-template.bicep'
