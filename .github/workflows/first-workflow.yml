@@ -20,4 +20,4 @@ jobs:
 
         steps:
             - name: Step 3
-              run: cowsay "Hello, world!"
+                run: cowsay "Hello, world!"
