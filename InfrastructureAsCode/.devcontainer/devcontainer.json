@@ -8,6 +8,6 @@
         },
         "ghcr.io/devcontainers/features/azure-cli:latest": {}
     },
-    "extensions": ["github.codespaces", "github.copilot","GitHub.copilot-chat"],
+    "extensions": ["github.codespaces", "GitHub.copilot","GitHub.copilot-chat"],
     "postCreateCommand": "cd Application && dotnet restore"
 }
