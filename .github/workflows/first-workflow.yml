@@ -1,5 +1,7 @@
 name: First Workflow
 
+on:
+    workflow_dispatch:
 
 jobs:
     job1:
