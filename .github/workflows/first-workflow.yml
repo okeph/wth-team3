@@ -9,15 +9,18 @@ jobs:
 
         steps:
             - name: Step 1
-                run: echo "step1"
-
+              run: echo "step1"
+      
             - name: Step 2
-                run: echo "step2"
-
+              run: echo "step2"
 
     job2:
-        runs-on: ubuntu-latest
+                runs-on: ubuntu-latest
+            
+                steps:
+                  - name: Cowsay Step
+                    run: |
+                      docker run --rm mplatform/cowsay "Hello from GitHub Actions"
+        
 
-        steps:
-            - name: Step 3
-                run: cowsay "Hello, world!"
+   
