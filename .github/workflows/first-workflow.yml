@@ -17,5 +17,5 @@ jobs:
                 runs-on: ubuntu-latest
             
                 steps:
-                  - name: Cat Fact Step
-                    uses: bobbyhadz/cat-facts-action@v1.1
+                    - name: Update System Step
+                      run: sudo apt-get update
